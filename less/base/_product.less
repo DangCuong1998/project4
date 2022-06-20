@@ -1,0 +1,158 @@
+.product{
+    margin-top: 64px;
+    .wrapper {
+        ul{
+            border-bottom: 2px solid #ccc;
+        }
+        font-family:sans-serif;
+        color:#555;
+        font-size:14px;
+        line-height:24px;
+    }
+    h1 {
+        font-size:20px;
+        font-weight:bold;
+        text-align:center;
+        text-transform:uppercase;
+    }
+    h1 + p {
+        text-align:center;
+        margin:20px 0;
+        font-size:16px;
+    }
+    .tabs {
+        margin-left: 4px;
+        li {
+            float:left;
+            margin-right: 19px;
+        }
+        a {
+            margin-top: 8px;
+            display:block;
+            text-align:center;
+            text-decoration:none;
+            text-transform:uppercase;
+            color:#888;
+            padding:19px 0px 12px 4px;
+            
+            &:hover, &.active {
+                border-bottom: 2px solid red;
+                color: red;
+            }
+            span{
+               margin-right: 5px;
+            }
+        }
+        .sort-text{
+            
+        }
+
+    }
+    .tabgroup {
+        .non-padding{
+            padding: 0px 0px!important;
+        }
+        div {
+            
+        }
+        .list-product{
+            margin-top: -48px;
+            padding : 38px 0px;
+            width: 100%;
+            display: inline-block;
+
+            .last-row{
+                margin-right: 0px!important;            
+            }
+
+            .product-detail{
+                margin-top: 48px;
+                padding: 0 0px;
+                position: relative;
+                margin-right: 41px;
+                text-align: center;
+                height: 327px;
+
+                img{
+                    margin-top: -6px;
+                    margin-left: -10px;
+                    height: 242px;
+
+                }
+
+                .product-show-text{
+                    margin-left: 28px;
+                    margin-top: 12px;
+
+                    .title-product{
+                        font-size: 15px;
+                        text-align: left;
+                        font-weight: bold;
+                    }
+                    .price{
+                        font-size:14px!important;
+                        text-align: left;
+                    }
+                }
+
+                .menu-show-hover{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    float: right;
+                    display:none;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    
+                    .item{
+                        margin-bottom: 15px;
+                        text-align: center;
+                        background-color: white;
+                        box-shadow: inset 0 0 0 2px #ccc;
+                        i{
+                            padding: 10px 8px;
+                        }
+                        &:hover, &.active {
+                            background-color: red;
+                            box-shadow: inset 0 0 0 2px #f45e61;
+                        }
+                    }
+                }
+
+                &:hover, &.active {
+                    position: relative;
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+                    .menu-show-hover{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        float: right;
+                        display:block;
+                        margin-right: 20px;
+                        margin-top: 20px;
+                        
+                        .item{
+                            margin-bottom: 11px;
+                            text-align: center;
+                            background-color: white;
+                            box-shadow: inset 0 0 0 2px #ccc;
+                            i{
+                                padding: 9px 9px;
+                            }
+                            &:hover, &.active {
+                                background-color: red;
+                                box-shadow: inset 0 0 0 2px #f45e61;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .clearfix:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+
+}
